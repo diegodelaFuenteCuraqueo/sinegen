@@ -1,19 +1,19 @@
 #include <iostream>
 #include "saveWaveInWav/saveWaveInWav.h"
+#include "CLI/CLI.h"
 
 using namespace std;
 
 int main () {
-  double duration = 5.0; // 5 seconds
-  double frequency = 440.0; // 440 Hz
 
-  cout << "Enter duration (seconds): <5seconds by default>" << endl;
-  cin >> duration;
-  cout << "Enter frequency (Hz): <440hz by default>" << endl;
-  cin >> frequency;
+  CLI cli;
 
+  double duration = cli.askForDuration();
+  double frequency = cli.askForFrequency();
+
+  // the function that creates an audio wave file with pure sinusoidal sound.
   saveWaveInWav(duration, frequency);
 
-  cout << "Sine wave file created!" << endl;
+  cli.end();
   return 0;
 }
