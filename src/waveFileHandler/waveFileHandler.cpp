@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
-#include "waveFileHandler.h"
+#include "WaveFileHandler.h"
 
 using namespace std;
 

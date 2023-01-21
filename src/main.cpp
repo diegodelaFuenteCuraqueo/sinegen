@@ -1,5 +1,5 @@
 #include <iostream>
-#include "saveWaveInWav/saveWaveInWav.h"
+#include "SaveWaveInWav/SaveWaveInWav.h"
 #include "CLI/CLI.h"
 
 using namespace std;
