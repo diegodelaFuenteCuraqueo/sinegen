@@ -1,2 +1,2 @@
 
-void saveWaveInWav(double duration, double frequency);
+void SaveWaveInWav(double duration, double frequency);

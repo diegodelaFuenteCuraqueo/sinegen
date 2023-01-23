@@ -12,7 +12,7 @@ int main () {
   double frequency = cli.askForFrequency();
 
   // the function that creates an audio wave file with pure sinusoidal sound.
-  saveWaveInWav(duration, frequency);
+  SaveWaveInWav(duration, frequency);
 
   cli.end();
   return 0;

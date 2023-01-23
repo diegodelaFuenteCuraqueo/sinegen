@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void saveWaveInWav(double duration, double frequency) {
+void SaveWaveInWav(double duration, double frequency) {
     WaveFileHandler waveFileHandler(48000, duration);
     waveFileHandler.writeWaveFileHeader();
     waveFileHandler.writeSinewave(frequency);
